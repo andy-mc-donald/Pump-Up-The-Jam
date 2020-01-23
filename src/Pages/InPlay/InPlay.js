@@ -1,6 +1,6 @@
 import React from 'react'
 import JamJar from "../../Components/JamJar/JamJar";
-import { JamContainer, PumpButton, Title, Score, ArrowContainer } from "./InPlay.style"
+import { JamContainer, PumpButton, Title, Score, ArrowContainer, BoxInPlay } from "./InPlay.style"
 import { Box } from "@material-ui/core"
 function InPlay({ count, setCount, setInPlay }) {
 
@@ -17,7 +17,7 @@ function InPlay({ count, setCount, setInPlay }) {
 
 
     return (
-        <Box>
+        <BoxInPlay>
             <Title variant="h3" className="main-title"><span>P</span><span>U</span><span>M</span><span>P</span><span> U</span><span>P</span><span> T</span><span>H</span><span>E</span><span> J</span><span>A</span><span>M</span></Title>
 
             {/* <ArrowContainer> */}
@@ -26,8 +26,8 @@ function InPlay({ count, setCount, setInPlay }) {
             <JamContainer maxWidth="md">
                 <JamJar count={count} />
             </JamContainer>
-            <PumpButton onClick={pumpPressed}>Pump</PumpButton>
-        </Box>
+            <PumpButton onClick={pumpPressed} size="large" textsize="large">Pump</PumpButton>
+        </BoxInPlay>
     )
 }
 
