@@ -50,13 +50,13 @@ span:nth-child(12) {
 const Score = styled(Typography)`
   color: white;
     /* margin-top: 5rem; */
-    width: 20rem;
+    /* width: 20rem; */
     height: 5rem;
     background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #ef96e4 50%, #ef96e4 100%);
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    transform: rotate(5deg);
+    /* transform: rotate(5deg); */
  
 
 `;
