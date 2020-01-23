@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import InPlay from "./Pages/InPlay/InPlay"
 import NotInPlay from "./Pages/NotInPlay/NotInPlay"
+import { Container } from "@material-ui/core"
 
 import "./App.css";
 
@@ -10,19 +11,15 @@ function App() {
   const [count, setCount] = useState(0);
   const [inPlay, setInPlay] = useState(true);
 
-  useEffect(() => {
-    if (count === 2) {
-      setInPlay(false)
-    }
-  }, [count])
+
 
   return (
-    <div>
+    <Fragment>
       {inPlay ?
-        <InPlay count={count} setCount={setCount} />
+        <InPlay count={count} setCount={setCount} setInPlay={setInPlay} />
         :
         <NotInPlay count={count} setCount={setCount} setInPlay={setInPlay} />}
-    </div>
+    </Fragment>
   );
 }
 

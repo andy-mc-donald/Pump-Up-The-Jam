@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Box } from "@material-ui/core"
 function NotInPlay({ count, setCount, setInPlay }) {
 
     const restartGame = () => {
@@ -7,10 +7,10 @@ function NotInPlay({ count, setCount, setInPlay }) {
         setInPlay(true);
     }
     return (
-        <div>
+        <Box>
             Your score was {count}
             <button onClick={restartGame}>Restart</button>
-        </div>
+        </Box>
     )
 }
 

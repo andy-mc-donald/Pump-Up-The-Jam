@@ -4,9 +4,9 @@ import React from "react";
 const JamJar = ({ count }) => {
   return (
     <svg
-      height={`${count * 50}pt`}
+      height={`${50 + count * 50}pt`}
       viewBox="-63 0 511 512"
-      width={`${count * 50}pt`}
+      width={`${50 + count * 50}pt`}
       xmlns="http://www.w3.org/2000/svg"
       id="wiggle"
     >
